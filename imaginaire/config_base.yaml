@@ -20,7 +20,7 @@ metrics_epoch:
 # max_epoch and max_iter specify what is the maximum epoch and iteration that we will train our model.
 # min( max_epoch * dataset_size / batch_size, max_iter) will be the total number of iterations that the model will be trained.
 max_epoch: 9999999999
-max_iter: 9999999999
+max_iter: 500000
 # logging_iter controls how often we log the training stats.
 logging_iter: 100
 # If speed_benchmark is True, we will print out time required for forward, backward, and gradient update.
@@ -40,7 +40,7 @@ checkpoint:
     # 'latest_checkpoint.pt', so that the new checkpoint will overwrite previous ones.
     # If save_epoch is set to N, then we save the checkpoint every N epoch.
     # Both can be set at the same time.
-    save_iter: 9999999999
+    save_iter: 10000
     save_latest_iter: 9999999999
     save_epoch: 9999999999
     save_period: 9999999999
