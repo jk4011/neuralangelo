@@ -16,4 +16,5 @@ for IDX in "24" "37" "40" "55" "63" "65" "69" "83" "97" "105" "106" "110" "114" 
         --config=${CONFIG} \
         --show_pbar \
             --wandb
+    sleep 10
 done

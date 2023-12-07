@@ -26,6 +26,7 @@ for (( i=0; i<$IDX_LEN; i+=${NGPUS} )); do
                 --wandb &
                 # 2>&1 > logs/${GROUP}/commmand_log 
         fi
+        sleep 10
     done
     wait
 done
