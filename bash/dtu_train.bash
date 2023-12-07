@@ -1,3 +1,5 @@
+#!/bin/bash
+
 GPUS=0,3,4,5,6,7
 NGPUS=6  # use >1 for multi-GPU training!
 
