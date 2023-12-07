@@ -26,7 +26,7 @@ for (( j=0; j<${NGPUS}; j++ )); do
         echo 1111
         echo $NAME
         sed -i "s/dtu_scan[0-9]\+/dtu_scan$IDX/g" projects/neuralangelo/configs/dtu.yaml
-        PORT=$((27000 + $j))
+        PORT=$((26000 + $j))
         CUDA_VISIBLE_DEVICES=${GPUS[j]} torchrun --master_port=${PORT} train.py \
             --logdir=logs/${GROUP}/${NAME} \
             --config=${CONFIG} \
