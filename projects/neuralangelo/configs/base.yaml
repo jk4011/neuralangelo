@@ -130,7 +130,7 @@ data:
     type: projects.nerf.datasets.nerf_blender
     root: datasets/nerf-synthetic/lego
     use_multi_epoch_loader: True
-    num_workers: 4
+    num_workers: 8
     preload: True
     num_images:  # The number of training images.
     train:
