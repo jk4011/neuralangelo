@@ -5,7 +5,7 @@ GPUS=(${@:2})
 NGPUS=${#GPUS[@]}
 
 EXPERIMENT=tnt
-GROUP=example_group
+GROUP=tnt
 CONFIG=projects/neuralangelo/configs/${EXPERIMENT}.yaml
 
 DATA_LIST=(Barn Ignatius Truck Caterpillar Courthouse Meetingroom)
