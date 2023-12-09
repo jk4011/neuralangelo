@@ -4,9 +4,8 @@ START_IDX=$1
 GPUS=(${@:2})
 NGPUS=${#GPUS[@]}
 
-EXPERIMENT=tnt
 GROUP=tnt
-CONFIG=projects/neuralangelo/configs/${EXPERIMENT}.yaml
+CONFIG=projects/neuralangelo/configs/tnt.yaml
 
 DATA_LIST=(Barn Ignatius Truck Caterpillar Courthouse Meetingroom)
 DATA_LEN=${#DATA_LIST[@]}
